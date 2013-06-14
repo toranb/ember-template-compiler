@@ -1,0 +1,30 @@
+{
+  "author": {
+    "name": "toran billups",
+    "email": "toranb@gmail.com"
+  },
+  "name": "ember-template-compiler",
+  "description": "An npm module for the ember-template-compiler.js file that ships with ember.js",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toranb/ember-template-compiler"
+  },
+  "keywords": [
+    "Ember.js",
+    "Handlebars.js"
+  ],
+  "main": "./lib/main",
+  "bin": {
+    "ember-template-compiler": "./bin/compiler"
+  },
+  "engines": {
+    "node": ">=v0.8.1"
+  },
+  "licenses": [
+    "MIT"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {}
+}
