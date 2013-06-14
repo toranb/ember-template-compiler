@@ -8,13 +8,9 @@ If you have a client build process and need to compile handlebars templates for 
     npm install ember-template-compiler
 
     var compiler = require('ember-template-compiler');
-    var input = compiler.precompile(template['content']).toString();
-    var output = "Ember.TEMPLATES['" + template['name'] + "'] = Ember.Handlebars.template(" + input + ");";
-
-##What are a few projects using this today?
-
-Django based web apps can use this with django-compressor
-Pending a pull request to get a precompiler into the karma test runner
+    var template = fs.readFileSync('foo.handlebars').toString();
+    var input = compiler.precompile(template).toString();
+    var output = "Ember.TEMPLATES['foo'] = Ember.Handlebars.template(" + input + ");";
 
 ##Development
 
