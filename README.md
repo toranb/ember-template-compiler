@@ -18,3 +18,9 @@ To run the tests
 
     cd tests
     ./runner.sh
+
+## License
+
+Copyright © 2013 Toran Billups
+
+Licensed under the MIT License
