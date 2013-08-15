@@ -1,5 +1,6 @@
-
 An npm module for the ember-template-compiler.js file that ships with ember.js
+
+This version of ember-template compiler includes middleware (for use with express).  It is has been tested with Ember RC4.
 
 ##What can I do with this?
 
@@ -31,7 +32,7 @@ A simple setup will look something like:
 - `dest`: Output destination. Do not include `__dirname` if origin not defined, **REQUIRED**
 - `origin`: Origin directory, **DEFAULT: false**
 - `force`: Force compile, **DEFAULT: false**
-- `format`: Output format. Either `'AMD'` or `null`.  `null` outputs an Ember.TEMPLATES property
+- `format`: Output format. Either `'AMD'` or `null`.  `null` outputs an `Ember.TEMPLATES` property
 - `namePrefix`: Prefix for template name 
 - `pathInName`: Include path in name, **DEFAULT: true**
 
