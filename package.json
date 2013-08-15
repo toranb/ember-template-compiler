@@ -5,7 +5,7 @@
   },
   "name": "ember-template-compiler",
   "description": "An npm module for the ember-template-compiler.js file that ships with ember.js",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "repository": {
     "type": "git",
     "url": "https://github.com/toranb/ember-template-compiler"
@@ -24,7 +24,20 @@
   "licenses": [
     "MIT"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "mkdirp": "0.3.x"
+  },
   "devDependencies": {},
-  "optionalDependencies": {}
+  "optionalDependencies": {},
+  "readme": "\nAn npm module for the ember-template-compiler.js file that ships with ember.js\n\n##What can I do with this?\n\nIf you have a client build process and need to compile handlebars templates for ember.js\n\n    npm install ember-template-compiler\n\n    var compiler = require('ember-template-compiler');\n    var template = fs.readFileSync('foo.handlebars').toString();\n    var input = compiler.precompile(template).toString();\n    var output = \"Ember.TEMPLATES['foo'] = Ember.Handlebars.template(\" + input + \");\";\n\n##Development\n\nTo run the tests\n\n    cd tests\n    ./runner.sh\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/toranb/ember-template-compiler/issues"
+  },
+  "_id": "ember-template-compiler@0.0.6",
+  "dist": {
+    "shasum": "d87efaee0350b54f56cad04db9ecd1bdff76fad6"
+  },
+  "_from": "ember-template-compiler@",
+  "_resolved": "https://registry.npmjs.org/ember-template-compiler/-/ember-template-compiler-0.0.6.tgz"
 }
