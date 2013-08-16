@@ -1,6 +1,12 @@
-An npm module for the ember-template-compiler.js file that ships with ember.js
+An npm module for the ember-template-compiler.js file that ships with ember.js.
 
-This version of ember-template compiler includes middleware (for use with express).  It is has been tested with Ember RC4.
+##Features
+- Render ember templates server side
+- Run as middleware
+- Outputs AMD and `Ember.TEMPLATE` objects
+
+##Requires
+- [mkdirp](https://github.com/substack/node-mkdirp)
 
 ##What can I do with this?
 
