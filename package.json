@@ -29,7 +29,11 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "jasmine-node": "~1.11"
+    "jasmine-node": "~1.11",
+    "handlebars": "~1.1"
+  },
+  "peerDependencies": {
+    "handlebars": "~1.1"
   },
   "optionalDependencies": {}
 }
