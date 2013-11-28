@@ -21,7 +21,7 @@ simply specify it in your `package.json`. By default the latest 1.x version will
 
 To run the tests
 
-    npm tests
+    npm test
 
 ## License
 
