@@ -16,8 +16,7 @@ If you have a client build process and need to compile handlebars templates for 
 
 To run the tests
 
-    cd tests
-    ./runner.sh
+    npm tests
 
 ## License
 
