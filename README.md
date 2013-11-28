@@ -12,6 +12,11 @@ If you have a client build process and need to compile handlebars templates for 
     var input = compiler.precompile(template).toString();
     var output = "Ember.TEMPLATES['foo'] = Ember.Handlebars.template(" + input + ");";
 
+##Handlebars Version
+
+This package will utilize any recent Handlebars version. To require a specific version
+simply specify it in your `package.json`. By default the latest 1.x version will be used.
+
 ##Development
 
 To run the tests
