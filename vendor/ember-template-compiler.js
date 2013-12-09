@@ -10,7 +10,7 @@ var Ember = { assert: function() {}, FEATURES: { isEnabled: function() {} } };
 // ==========================================================================
 
 
- // Version: 1.2.0
+ // Version: 1.3.0-beta.2
 
 (function() {
 /**
@@ -126,7 +126,7 @@ Ember.Handlebars.helper = function(name, value) {
 */
 Ember.Handlebars.makeViewHelper = function(ViewClass) {
   return function(options) {
-    Ember.assert("You can only pass attributes (such as name=value) not bare values to a helper for a View", arguments.length < 2);
+    Ember.assert("You can only pass attributes (such as name=value) not bare values to a helper for a View found in '" + ViewClass.toString() + "'", arguments.length < 2);
     return Ember.Handlebars.helpers.view.call(this, ViewClass, options);
   };
 };
@@ -199,7 +199,7 @@ Ember.Handlebars.JavaScriptCompiler.prototype.appendToBuffer = function(string) 
 // instead, as expected.
 //
 // This can go away once the following is closed:
-// https://github.com/wycats/handlebars.js/issues/617
+// https://github.com/wycats/handlebars.js/issues/634
 
 var DOT_LOOKUP_REGEX = /helpers\.(.*?)\)/,
     BRACKET_STRING_LOOKUP_REGEX = /helpers\['(.*?)'/,
