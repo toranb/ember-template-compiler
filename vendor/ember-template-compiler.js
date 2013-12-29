@@ -268,8 +268,10 @@ Ember.Handlebars.Compiler.prototype.mustache = function(mustache) {
   @for Ember.Handlebars
   @static
   @param {String} string The template to precompile
+  @param {Boolean} asObject optional parameter, defaulting to true, of whether or not the 
+                            compiled template should be returned as an Object or a String
 */
-Ember.Handlebars.precompile = function(string) {
+Ember.Handlebars.precompile = function(string, asObject) {
   var ast = Handlebars.parse(string);
 
   var options = {
@@ -285,8 +287,10 @@ Ember.Handlebars.precompile = function(string) {
     stringParams: true
   };
 
+  asObject = asObject === undefined ? true : asObject;
+
   var environment = new Ember.Handlebars.Compiler().compile(ast, options);
-  return new Ember.Handlebars.JavaScriptCompiler().compile(environment, options, undefined, true);
+  return new Ember.Handlebars.JavaScriptCompiler().compile(environment, options, undefined, asObject);
 };
 
 // We don't support this for Handlebars runtime-only
