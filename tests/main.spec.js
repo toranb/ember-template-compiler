@@ -7,7 +7,7 @@ describe("ember-template-compiler tests", function() {
       template = fs.readFileSync(path.join(path.dirname(fs.realpathSync(__filename)),'file-system', 'app', 'templates', 'foo.handlebars')).toString();
 
   it("compiles down a handlebars template", function() {
-    result = sut.precompile(template).toString();
+    result = sut.precompile(template, false);
     expect(result).toContain("outlet");
   });
 
