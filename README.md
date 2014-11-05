@@ -20,8 +20,7 @@ var output = "Ember.TEMPLATES['foo'] = Ember.Handlebars.template(" + input + ");
 ```
 
 Optionally if you leave off the second parameter, or set it to `true`, you will get back an object
-instead of a string. Note: Building as a string is more efficient than building as an object and
-then converting it to a string.
+instead of a string.
 
 ```js
 var input = compiler.precompile(template).toString();
