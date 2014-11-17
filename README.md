@@ -9,7 +9,7 @@ If you have a client build process and need to compile handlebars templates for 
 
     var compiler = require('ember-template-compiler');
     var template = fs.readFileSync('foo.handlebars').toString();
-    var input = compiler.precompile(template).toString();
+    var input = compiler.precompile(template, false);
     var output = "Ember.TEMPLATES['foo'] = Ember.Handlebars.template(" + input + ");";
 
 Additionally you can pass a second argument into `precompile` which will build the precompiled template as an object (`true` or `undefined`) or as a string (`false`).  Building as a string is more efficient than building as an object then converting it to a string. 
@@ -20,7 +20,7 @@ Additionally you can pass a second argument into `precompile` which will build t
 ##Handlebars Version
 
 This package will utilize any recent Handlebars version. To require a specific version
-simply specify it in your `package.json`. By default the latest 1.x version will be used.
+simply specify it in your `package.json`. By default the latest 2.x version will be used.
 
 ##Development
 
