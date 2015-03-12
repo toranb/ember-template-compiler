@@ -22,7 +22,7 @@
     "ember-template-compiler": "./bin/compiler"
   },
   "engines": {
-    "node": ">=v0.8.1"
+    "node": ">=v0.8.19"
   },
   "licenses": [
     "MIT"
