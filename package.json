@@ -5,7 +5,7 @@
   },
   "name": "ember-template-compiler",
   "description": "An npm module for the ember-template-compiler.js file that ships with ember.js",
-  "version": "1.9.1",
+  "version": "1.10.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/toranb/ember-template-compiler"
@@ -29,8 +29,7 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "jasmine-node": "~1.11",
-    "handlebars": "~2"
+    "jasmine-node": "~1.11"
   },
   "optionalDependencies": {}
 }
