@@ -30,7 +30,7 @@
   "dependencies": {},
   "devDependencies": {
     "jasmine-node": "~1.11",
-    "handlebars": "~2"
+    "handlebars": "~4"
   },
   "optionalDependencies": {}
 }
